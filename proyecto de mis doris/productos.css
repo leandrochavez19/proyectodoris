@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ 
+}
+body{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-azul-galaxia_125540-99.jpg?w=2000);
+}
+.header{
+    width: 100%;
+    height: 65px;
+    background: #fff;
+    position: fixed;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.logo{
+    float: left;
+    line-height: 65px;
+   
+}
+
+.menu{
+    float: right;
+    line-height: 65px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu a{
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #6d6d6d;
+    transition: all 500ms ease;
+}
+.menu a:hover{
+    background: #cc673b;
+    color: #fff;
+}
+.menu .submenu{
+    background: #fff;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.2);
+    display: none;
+}
+.menu .submenu li a{
+    line-height: 50px;
+}
+.menu ul li a:hover + ul, .menu .submenu:hover{
+    display: block;
+}
+.titulo{
+    transform: translate(50px,0px);
+}
+/*estilos para la portada*/
+.portada{
+    width: 100%;
+    height: 520px;
+    background: url("imagenes/4.jpg");
+    background-size: 100vw 100vh;
+}
+/*tarjetas*/
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px  rgb(0, 0, 0,0.23), 0 10px 28px rgb(0, 0, 0,0.23);
+    transition: .4s;
+    background: white;
+}
+.content:hover{
+    box-shadow: 0 3px 6px  rgb(0, 0, 0,0.23),0 3px 6px rgb(0, 0, 0,0.23);
+transform: translate(0px,-8px);
+}
+img{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding:  8px;
+    font-size: 10px;
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+@media(max-width:1000px){
+    .content{
+        width: 100%;
+    }
+}
+@media(max-width:750px){
+    .content{
+        width: 100%;
+    }
+}
+  /*pie de pagina*/
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 50px;
+    height: 50PX;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

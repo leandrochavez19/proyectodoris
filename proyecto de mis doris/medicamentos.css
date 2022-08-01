@@ -1,0 +1,124 @@
+body { 
+    background: #e8e8e8; 
+    font-family:sans-serif;
+    margin:0;
+  background-image:url(https://marketplace.canva.com/EAE4DAU5e6Q/2/0/1600w/canva-fondo-para-zoom-psicod%C3%A9lico-morado-Az4d6IKtdjs.jpg)
+}
+h1{
+    color:orange;
+    font-size: 20xp;
+    text-align: center;
+}
+.logo {
+    display: flex;
+   align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+nav {
+    font-weight: 600;
+    padding-right: 10px;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 100%;
+    max-width: 2020px;
+    margin:0;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 15px;
+    display: block;
+}
+.menu li a:hover{
+    background: #ef8354;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.omerpra{
+    transform: translate(300px,150px);
+}
+.compra{
+    transform: translate(800px,-300px);
+    border-color: black;
+    width: 400px;
+    padding: 50px;
+}
+.precio{
+    transform: translate(0px,0px);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+border: 16px;
+border-color: black;
+}
+.carrito{
+    font-size: 30px;
+    background-color: rgb(47, 187, 140);
+    font-family: 'Times New Roman', Times, serif;
+    transform: translate(200px,-60px);
+    width: 200px;
+}
+.container {
+	position: absolute;
+	left: 48%;
+	top: 45%;
+	transform: translate(-50%,-455px);
+	padding: 10px;
+}
+
+input {
+	outline: none;
+	box-sizing: border-box;
+	height: 60px;
+	width: 0px;
+	padding: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid #D50000;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: grey;
+}
+
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 80px;
+	height: 80px;
+	background: #D50000;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn i {
+	font-size: 25px;
+	color: rgb(63, 63, 63);
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
+.container:hover input {
+	width: 350px;
+}
+
+.container:hover i{
+	transform: rotate(-360deg);
+}
+
+.btn:hover{
+	background: #cc0000;
+}

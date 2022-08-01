@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(https://img.freepik.com/vector-premium/fondo-blanco-geometrico-abstracto_1302-11379.jpg);
+}
+.header{
+    width: 100%;
+    height: 65px;
+    background: rgb(255, 255, 255);
+    position: fixed;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.logo{
+    float: left;
+    line-height: 65px;
+}
+.menu{
+    float: right;
+    line-height: 65px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu a{
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #6d6d6d;
+    transition: all 500ms ease;
+}
+.menu a:hover{
+    background: #cc673b;
+    color: #fff;
+}
+.menu .submenu{
+    background: #fff;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.2);
+    display: none;
+}
+.menu .submenu li a{
+    line-height: 50px;
+}
+.menu ul li a:hover + ul, .menu .submenu:hover{
+    display: block;
+}
+.titulo{
+    transform: translate(60px,-65px);
+}
+/*estilos para la portada*/
+.portada{
+    width: 100%;
+    height: 520px;
+    background: url("imagenes/4.jpg");
+    background-size: 100vw 100vh;
+}
+/*tarjeta de productos*/
+
+.cover {
+    height:400px;
+    background-image:url(rr1.jpg) ;
+    color:white;
+    background-size: cover; 
+    background-position: center;
+    background-color: rgba(0,0,0,0,5);
+    background-blend-mode: darken;
+}
+
+.cover-small{
+    height: 200px;
+    background-blend-mode: normal;
+}
+
+.card{
+    border: 0! important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+.card-tittle{
+    min-height: 3rem;
+}
+
+.card-text{
+    min-height: 4rem;
+}
+
+.product-stripe, .slider{
+    overflow-x:scroll;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+}
+
+.stripe-container, .slider-container{
+    display: flex;
+}
+
+.stripe-container .card{
+    width: 300px;
+    flex-shrink:0;
+    margin-right: 1rem;
+}
+.responsive-iframe{
+    position: relative;
+    padding-top: 56.25%;
+}
+.responsive-iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.slider{
+    overflow-x:hidden ;   
+}
+.slider-container{
+    transform: translateX(0);
+    animation: slider 20s infinite;
+}
+
+.image-container{
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+.avatar{
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+@keyframes slider {
+    0%{
+        transform: translateX(0);
+
+    }
+    20%{
+        transform:translateX(0) ;
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    } 
+    50%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    95%{
+        transform:translateX(-300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+/*descubre*/
+.index-post {
+    width: 1124px; transition: all 1.5s;
+    height: 364px; overflow: hidden; 
+    margin: auto;
+    display: block;
+    margin-top: 10%;
+}
+
+.contener {
+    float: left;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    height: 320px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #00000073;
+    transition: all 0.3s;
+}
+
+.contener:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.image-contener {
+    display: block;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+
+.image-contener img {
+    width: 100%;
+}
+
+.meta-contener {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 110px;
+    padding: 10px 20px;
+}
+
+.meta-contener .title {
+    padding: 0;
+    margin: 10px 0;
+    font-size: 22px;
+    color: #0076b6;
+}
+
+.meta-contener .desc {
+    font-size: 13px;
+    text-align: center;
+    color: #373737;
+}
+
+.button-contener {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    height: 40px;
+}
+
+.button-contener .button {
+    width: 100%;
+    padding: 6px 0;
+    text-decoration: none;
+    background: linear-gradient(125deg, #00ff35 0%, #0091a7 60%);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+
+}
+
+.button-contener .button:hover {
+    padding-left: 15px;
+}
+
+@media screen and (max-width:1124px){
+    .index-post{
+        width: 562px; height: 728px;
+    }
+}
+@media screen and (max-width:562px){
+    .index-post{
+        width: 281px; height: 1496px;
+    }
+}
+/*pie de pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 50px;
+    height: 50PX;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
